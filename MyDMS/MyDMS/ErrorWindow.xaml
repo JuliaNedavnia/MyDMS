@@ -1,0 +1,16 @@
+<Window x:Class="MyDMS.ErrorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:MyDMS"
+        mc:Ignorable="d"
+        Title="Error" Height="200" Width="400">
+    <Grid>
+        <!-- Error message text block -->
+        <TextBlock Text="An error occurred:" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10"/>
+        <TextBlock x:Name="errorMessageText" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10,30,10,0"/>
+
+        <Button Content="Close" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,10" Click="CloseButton_Click"/>
+    </Grid>
+</Window>
